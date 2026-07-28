@@ -11,6 +11,12 @@ x = {
     location   = "japanwest"
     managed_by = "manish"
   }
+
+    rg4 = {
+    name       = "indian-airforce"
+    location   = "japanwest"
+    managed_by = "manish"
+  }
 }
 
 #####Vnet######
