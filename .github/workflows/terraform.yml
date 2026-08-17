@@ -1,0 +1,64 @@
+name: Terraform Azure CI/CD
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  terraform:
+    name: Terraform
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: Terraform/Assignment_6/parent_module
+
+    steps:
+
+      # 1. Checkout repository
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      # 2. Login to Azure using OIDC
+      - name: Azure Login
+        uses: azure/login@v2
+        with:
+          client-id: "fe1db0a3-dec0-499d-af5c-170e1a76a5d0"
+          tenant-id: "2bc09c37-516a-4a78-8c8f-2d3c75eec190"
+          subscription-id: "cfd6d747-9e26-4c62-9c5d-c14997aef663"
+
+      # 3. Setup Terraform
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+
+      # 4. Terraform Format
+      - name: Terraform Format Check
+        run: terraform fmt -check -recursive
+
+      # 5. Terraform Init
+      - name: Terraform Init
+        run: terraform init
+
+      # 6. Terraform Validate
+      - name: Terraform Validate
+        run: terraform validate
+
+      # 7. Terraform Plan
+      - name: Terraform Plan
+        run: terraform plan -var-file="terraform.tfvars"
+
+      # 8. Terraform Apply
+      - name: Terraform Apply
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        run: terraform apply -auto-approve -var-file="terraform.tfvars"

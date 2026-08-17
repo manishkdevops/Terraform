@@ -23,6 +23,12 @@ x = {
     location   = "japanwest"
     managed_by = "manish"
   }
+
+    rg5 = {
+    name       = "usa-navy"
+    location   = "japanwest"
+    managed_by = "manish"
+  }
 }
 
 #####Vnet######
@@ -110,9 +116,6 @@ c = {
     nic_name = "army_nic1"
     vm_size  = "Standard_D2s_v3"
     os_disk_name = "myosdisk1"  
-    github_token = "ghp_1234567890abcdefghijklmnopqrstuvwxyzABCD"
-
-  
   }
 
   vm2 = {
@@ -122,8 +125,5 @@ c = {
     nic_name = "army_nic2"
     vm_size  = "Standard_D2s_v3"
     os_disk_name = "myosdisk2"
-    github_token = "ghp_1234567890abcdefghijklmnopqrstuvwxyzABCD"
-
-
   }
 }
