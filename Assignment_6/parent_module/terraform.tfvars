@@ -12,19 +12,19 @@ x = {
     managed_by = "manish"
   }
 
-    rg3 = {
+  rg3 = {
     name       = "indian-airforce"
     location   = "japanwest"
     managed_by = "manish"
   }
 
-    rg4 = {
+  rg4 = {
     name       = "usa-airforce"
     location   = "japanwest"
     managed_by = "manish"
   }
 
-    rg5 = {
+  rg5 = {
     name       = "usa-navy"
     location   = "japanwest"
     managed_by = "manish"
@@ -110,20 +110,20 @@ b = {
 #######VM#####
 c = {
   vm1 = {
-    vm_name  = "linux-vm1"
-    location = "japaneast"
-    rg_name  = "army"
-    nic_name = "army_nic1"
-    vm_size  = "Standard_D2s_v3"
-    os_disk_name = "myosdisk1"  
+    vm_name      = "linux-vm1"
+    location     = "japaneast"
+    rg_name      = "army"
+    nic_name     = "army_nic1"
+    vm_size      = "Standard_D2s_v3"
+    os_disk_name = "myosdisk1"
   }
 
   vm2 = {
-    vm_name  = "linux-vm2"
-    location = "japaneast"
-    rg_name  = "army"
-    nic_name = "army_nic2"
-    vm_size  = "Standard_D2s_v3"
+    vm_name      = "linux-vm2"
+    location     = "japaneast"
+    rg_name      = "army"
+    nic_name     = "army_nic2"
+    vm_size      = "Standard_D2s_v3"
     os_disk_name = "myosdisk2"
   }
 }
