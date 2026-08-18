@@ -35,7 +35,6 @@ jobs:
             --username "1b2365ec-8e5d-4801-8aa8-296368f1cdb0" \
             --password "fe65abc3-1c65-4b07-8877-391a47be7530" \
             --tenant "2fc99489-a777-4ba0-a3e7-a56465285d7c" \
-            --allow-no-subscriptions
 
       - name: Set Azure Subscription
         run: |
