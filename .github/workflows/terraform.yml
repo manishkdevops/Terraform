@@ -19,7 +19,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: Assignment_6/parent_module
+        working-directory: Assignment_7
 
     steps:
       - name: Checkout code
@@ -68,7 +68,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: Assignment_6/parent_module
+        working-directory: Assignment_7
 
     steps:
       - name: Checkout code
