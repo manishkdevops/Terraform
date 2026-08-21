@@ -7,4 +7,9 @@ x = {
     name     = "harsha"
     location = "westus"
   }
+
+  rg3 = {
+    name     = "Aniruddh"
+    location = "central india"
+  }
 }
