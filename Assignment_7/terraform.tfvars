@@ -7,4 +7,9 @@ x = {
     name     = "harsha"
     location = "westus"
   }
+
+    rg4 = {
+    name     = "BetaCheetah"
+    location = "westus"
+  }
 }
