@@ -8,8 +8,11 @@ x = {
     location = "westus"
   }
 
+  rg4 = {
+    name     = "BetaCheetah"
+    location = "westus"
   rg3 = {
     name     = "Aniruddh"
-    location = "central india"
+    location = "japan east"
   }
 }
