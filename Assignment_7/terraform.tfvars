@@ -11,5 +11,8 @@ x = {
   rg4 = {
     name     = "BetaCheetah"
     location = "westus"
+  rg3 = {
+    name     = "Aniruddh"
+    location = "japan east"
   }
 }
