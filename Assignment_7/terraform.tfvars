@@ -8,7 +8,7 @@ x = {
     location = "westus"
   }
 
-    rg3 = {
+  rg3 = {
     name     = "Aniruddh"
     location = "central india"
   }
